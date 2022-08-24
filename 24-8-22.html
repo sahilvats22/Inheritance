@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <div id="d1">Click to slide</div>
+    <div id="d2">!!!!!!!!</div>
+    <script>
+      $(document).ready(function () {
+        $("#d1").hover(function () {
+          $("#d2").slideToggle("fast");
+        });
+      });
+    </script>
+    <style>
+      #d1,
+      #d2 {
+        padding: 5px;
+        text-align: center;
+        background-color: green;
+        border: solid 1px red;
+      }
+
+      #d2 {
+        padding: 50px;
+        display: none;
+      }
+    </style>
+  </body>
+</html>
