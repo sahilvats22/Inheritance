@@ -1,0 +1,33 @@
+<html>
+  <body>
+    <script>
+        class Marks{
+            constructor(eng,math,science){
+                this.eng=eng;
+                this.math=math;
+                this.science=science;
+            }
+            display(){
+                console.log("English= "+this.eng);
+                console.log("Maths= "+this.math);
+                console.log("Science= "+this.science);
+            }
+        }
+
+        class Average extends Marks{
+           
+            sum(){
+                console.log("Total marks="+(this.eng+this.math+this.science));
+            }
+            Avg(){
+              console.log("Average="+(this.eng+this.math+this.science)/3);
+            }
+        }
+
+        let my= new Average(56,67,90);
+        my.display();
+        my.sum();
+        my.Avg();
+    </script>
+  </body>
+</html>
